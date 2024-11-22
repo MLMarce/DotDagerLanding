@@ -1,0 +1,41 @@
+{
+    "passions": [
+        {
+            "name": "Programación",
+            "link": "https://www.youtube.com/@DotDager",
+            "imgName": "bg-progr",
+            "description": "La programación es mi herramienta para resolver problemas y crear soluciones innovadoras. Disfruto aprender nuevas tecnologías y usar el código como medio de expresión creativa.",
+            "pYoutube": "Acá te doy los mejores consejos para que mejores.",
+            "nameYT": "@DotDager"
+        },
+        {
+            "name": "Guitarras",
+            "link": "https://www.youtube.com/@DagerMusic",
+            "imgName": "bg-music",
+            "description": "Tocar la guitarra me conecta con la música y me permite expresar emociones que van más allá de las palabras. Es mi forma favorita de relajarme y crear.",
+            "pYoutube": "Te dejo mi canal de música, donde dejo salir todo lo que tengo adendro.",
+            "nameYT": "@DagerMusic"
+        },
+        {
+            "name": "Pepinos",
+            "link": "https://www.youtube.com/@DagerClips",
+            "imgName": "bg-clips",
+            "description": "Los pepinos representan lo artesanal y único. Me encanta experimentar con combinaciones y disfrutar de su versatilidad en cualquier momento.",
+            "pYoutube": "Te dejo mi canal de clips para que vos puedas disfrutar de mi versatilidad.",
+            "nameYT": "@DagerClips"
+        },
+        {
+            "name": "Filosofía",
+            "link": "https://www.youtube.com/@ElAntroDeDager",
+            "imgName": "bg-antro",
+            "description": "La filosofía me invita a reflexionar sobre preguntas profundas. Es una fuente constante de aprendizaje y una guía para entender el mundo.",
+            "pYoutube": "A continuación, mi espacio de cine y filosofía. ¡Que lo disfrutes!",
+            "nameYT": "@ElAntroDeDager"
+        },
+        {
+            "name": "Gatos",
+            "description": "Los gatos me inspiran con su independencia y curiosidad. Son un recordatorio de disfrutar los pequeños momentos de la vida.",
+            "pYoutube": "Próximamente habrá canal de gatitos, no te preocupes."
+        }
+    ]
+}

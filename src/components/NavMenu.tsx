@@ -16,11 +16,11 @@ export default function NavMenu() {
     }
 
     return (
-        <section className="z-50 fixed w-screen h-50px top-0 left-0 flex flex-col items-end p-2">
+        <section className="z-50 fixed w-screen max-w-[1920px] h-50 :h-80 top-0 left-[50%] -translate-x-[50%] flex flex-col just md:flex-row md:justify-end md:items-center items-end p-2">
 
             <nav
                 id="nav"
-                className={`${visibility} p-4 md:px-28 flex md:flex-row flex-col w-full h-[60vh] md:h-max overflow-hidden left-0 justify-between gap-6 absolute transition-all bg-dark`}
+                className={`${visibility} p-4 md:px-28 flex md:flex-row flex-col w-full h-[60vh] md:h-max overflow-hidden left-0 justify-between md:items-center gap-6 absolute transition-all bg-dark`}
             >
                 <div className="bg-logo bg-cover rounded-lg w-14 h-14 content-center relative">
                     <a
@@ -33,11 +33,11 @@ export default function NavMenu() {
                     <a
                         href="#about"
                         className="p-2 font-semibold border border-primary/50 hover:border-secondary/50 hover:shadow-sm hover:shadow-primary rounded-md bg-gradientcolor bg-clip-text text-transparent hover:text-primary backdrop-blur-lg text-center"
-                    >Sobre Mí</a>
+                    >Mis Pasiones</a>
                     <a
-                        href="/projects"
+                        href="#contact"
                         className="p-2 font-semibold border border-primary/50 hover:border-secondary/50 hover:shadow-sm hover:shadow-primary rounded-md bg-gradientcolor bg-clip-text text-transparent hover:text-primary backdrop-blur-lg text-center"
-                    >Proyectos</a>
+                    >Contactame</a>
                     <a
                         href="#game"
                         className="p-2 font-semibold border border-primary/50 hover:border-secondary/50 hover:shadow-sm hover:shadow-primary rounded-md bg-gradientcolor bg-clip-text text-transparent hover:text-primary backdrop-blur-lg text-center"
@@ -61,6 +61,7 @@ export default function NavMenu() {
                 </div>
             </nav>
             <button
+                type="button"
                 onClick={toggleMenu}
                 className="w-14 h-14 rounded-full bg-black shadow-inner shadow-primary p-2 py-3 flex flex-col justify-around z-50"
             >

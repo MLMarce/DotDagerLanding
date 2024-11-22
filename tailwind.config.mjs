@@ -22,8 +22,13 @@ export default {
             },
 			backgroundImage: {
 				game: "url('/1.webp')",
-				gradientcolor: "linear-gradient(to bottom, #ddd, #52f)",
-				logo: "url('/Dot.webp')"
+				gradientcolor: "linear-gradient(to bottom, #2fe, #52f)",
+				logo: "url('/Dot.webp')",
+				progr: "url('/channels4_banner.webp')",
+				guitar: "url('/guitar.webp')",
+				music: "url('/channels_music_banner.webp')",
+				clips: "url('/channel_clips_banner.webp')",
+				antro: "url('/channel_antro_banner.webp')"
 			},
 			textColor: {
 				colortext: "hsl(20, 20, 90)"

@@ -1,0 +1,28 @@
+---
+import RedirectSection from "./RedirectSection"
+type Props = {
+    name: string;
+    description: string;
+    pYoutube: string;
+    imgName?: string | undefined;
+    link?: string | undefined;
+    nameYT?: string | undefined;
+}
+
+const { name, description, imgName, link, pYoutube, nameYT } = Astro.props as Props
+
+const bgColor = imgName ? imgName : 'bg-gradientcolor'
+
+---
+<article class="w-full md:w-[40%] h-max md:h-2/4 flex flex-col md:items-center justify-around relative">
+    <header class="w-full p-2">
+        <h4 class="font-semibold text-primary text-center text-xl">{name}</h4>
+    </header>
+    <main class=" p-3 pt-4 flex flex-col gap-2">
+        <p>{description}</p>
+        <p>{pYoutube}</p>
+    </main>
+    <footer class="w-full p-2 px-3 relative">
+        {link ? <a href={link} target="_blank" aria-hidden class={`text-lg font-bold flex w-full h-full ${bgColor} bg-center bg-cover p-2 rounded-full text-secondary hover:text-secondary/70 justify-center`}>{nameYT}</a> : null}
+    </footer>
+</article>

@@ -1,17 +1,32 @@
-<section id="about" class="w-full h-max">
-    <h2>Mis Pasiones</h2>
-    <article>
-      <div class="">
-        <h4 class="bg-gradientcolor h-max bg-cover bg-clip-text text-transparent">Programación</h4>
-        <p>
-          La programación es mi herramienta favorita para dar vida a ideas
-          abstractas. Me encanta resolver problemas, construir soluciones
-          funcionales y explorar nuevas tecnologías. Cada línea de código es
-          una oportunidad para aprender algo nuevo, mejorar mis habilidades y
-          contribuir a proyectos que marquen una diferencia. Para mí,
-          programar es tanto un desafío intelectual como una forma de
-          expresión creativa.
-        </p>
-      </div>
-    </article>
-  </section>
+---
+import { undefined } from "astro:schema";
+import * as data from "../../content/passions.json";
+import Passion from "../Passion.astro";
+
+const { passions } = data;
+---
+
+<section
+  id="about"
+  class="w-full h-content min-h-screen md:pt-24 p-2 relative flex flex-col"
+>
+  <h2
+    class="font-bold text-3xl text-center bg-gradientcolor bg-clip-text text-transparent"
+  >
+    Mis Pasiones
+  </h2>
+  <div class="w-full flex-1  flex flex-wrap gap-2 justify-around">
+    {
+      passions?.map((passion) => (
+        <Passion
+          name={passion.name}
+          description={passion.description}
+          link={passion.link && passion.link}
+          imgName={passion.imgName && passion.imgName}
+          pYoutube={passion.pYoutube}
+          nameYT={passion.nameYT}
+        />
+      ))
+    }
+  </div>
+</section>
